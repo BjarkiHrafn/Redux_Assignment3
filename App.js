@@ -1,7 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'react-redux';
-import rootStore from './store'
+import rootStore from './store';
+import AddTodos from './Components/addTodo';
+import DisplayTodos from './Components/displayTodos';
+//import { name as appName } from './app.json';
 const store = rootStore();
 
 
@@ -11,8 +14,10 @@ export default class App extends React.Component {
       <Provider store = {store}>
         <View style={styles.container}>
           <Text>Open up App.js to start working on your app!</Text>
+          <AddTodos/>
+          <DisplayTodos/>
         </View>
-      <Provider/>
+      </Provider>
     );
   }
 }
@@ -22,6 +27,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });

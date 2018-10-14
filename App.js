@@ -1,11 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'react-redux';
-import rootStore from './store';
+import store from './store';
 import AddTodos from './Components/addTodo';
 import DisplayTodos from './Components/displayTodos';
-//import { name as appName } from './app.json';
-const store = rootStore();
+
 
 
 export default class App extends React.Component {

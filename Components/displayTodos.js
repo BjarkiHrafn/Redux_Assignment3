@@ -4,16 +4,13 @@ import { connect } from 'react-redux';
 
 
 class addTodo extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {todo: ""};
-  }
 
   render() {
+    console.log("displayTodos", this.props);
     return(
       <View>
         <Text>
-          {this.props.todos}
+          Hello, {this.props.todo}
         </Text>
       </View>
     );

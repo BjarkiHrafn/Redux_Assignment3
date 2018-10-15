@@ -18,6 +18,7 @@ const todoReducer = (state = initialState, action) => {
       };
 
     case DELETE_TODO:
+    console.log("payload: ", action.payload.task);
       return {
         ...state,
         todos: state.todos.filter(item => item.task !== action.payload.task)

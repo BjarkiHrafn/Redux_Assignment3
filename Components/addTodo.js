@@ -31,7 +31,7 @@ class addTodo extends React.Component {
   render() {
     if(this.state.write) {
       return(
-        <View>
+        <View style = {styles.container}>
           <View style={styles.inputContainer}>
             {this.state.err ? <Text style = {styles.errMsg}>Please insert text before adding a todo!</Text> : null}
             <TextInput style = {styles.input}
@@ -83,6 +83,9 @@ class addTodo extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    height: 150
+  },
   addTodos: {
     width: "100%",
     height: 60,
@@ -111,8 +114,7 @@ const styles = StyleSheet.create({
     borderLeftWidth: 1,
     borderTopWidth: 1,
     borderRightWidth: 1,
-    borderBottomWidth: 1,
-    height: "auto"
+    borderBottomWidth: 1
   }
 });
 export default connect()(addTodo);

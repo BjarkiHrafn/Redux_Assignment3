@@ -10,7 +10,7 @@ export default class App extends React.Component {
     return (
 
         <Provider store={store}>
-          <View>
+          <View style = {styles.con2}>
             <Image resizeMode={'cover'} style = {styles.img} source = {require('./assets/postIt.jpg')}></Image>
             <View style={styles.container} >
 
@@ -27,16 +27,18 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-
     backgroundColor: "white",
-    top: 25,
-    bottom: 25,
+    top: 50,
+    bottom: 50 ,
     alignItems: "center",
     justifyContent: "center"
   },
+  con: {
+    flex: 1
+  },
   img: {
     position: "relative",
-    height: 200
+    height: 150
 
   }
 });

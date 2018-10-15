@@ -62,7 +62,7 @@ class todo extends React.Component {
           ]}
         >
           <CheckBox
-            title={this.state.todoItem.task + " - " + this.state.todoItem.date}
+            title={this.props.todoItem.task + " - " + this.props.todoItem.date}
             checked={this.state.todoItem.done}
             onPress={() => this.onCheck()}
           />

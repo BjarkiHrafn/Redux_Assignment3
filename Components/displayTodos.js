@@ -9,10 +9,11 @@ class addTodo extends React.Component {
   }
 
   render() {
+    console.log(this.props.todos);
     return (
       <View>
         <Text>
-          Hello, {this.props.todos.length > 0 ? this.props.todos[0] : "empty" }
+          Hello, {this.props.todos.length > 0 ? this.props.todos[0].task : "empty" }
         </Text>
       </View>
     );

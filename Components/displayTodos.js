@@ -5,7 +5,6 @@ import Todo from "./todo";
 
 const styles = StyleSheet.create({
   todoListContainer: {
-    flex: 1,
     alignSelf: "stretch"
   }
 });
@@ -18,11 +17,11 @@ class addTodo extends React.Component {
 
   render() {
     const { todos } = this.props;
-    console.log(todos);
+    console.log("todos: ", todos);
     return (
       <View style={[styles.todoListContainer]}>
-        {todos.map(t => (
-          <Todo todoItem={t.task} />
+        {todos.map( (t, i) => (
+          <Todo key = {i} todoItem={t} />
         ))}
       </View>
     );

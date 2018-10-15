@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { CheckBox } from "react-native-elements";
 import Swipeable from "react-native-swipeable";
+import { connect } from 'react-redux';
 
 const styles = StyleSheet.create({
   todoItem: {
@@ -20,21 +21,27 @@ class todo extends React.Component {
     super(props);
     this.state = {
       checked: false,
-      todoItem: ""
+      todoItem: this.props.todoItem
     };
   }
 
   onDelete = () => {
-    // TODO: delete todo item using the ondelete function
+    this.props.dispatch({
+      type: "DELETE_TODO",
+      payload: {task: this.state.todoItem.task, done: this.state.todoItem.done}
+    });
   };
 
   onCheck = () => {
     // TODO: add checked to store
-    this.setState({ checked: !this.state.checked });
+    //this.setState({ checked: !this.state.checked });
+    this.props.dispatch({
+      type: "UPDATE_DONE_TODO",
+      payload: {task: this.state.todoItem.task, done: this.state.todoItem.done}
+    })
   };
 
   render() {
-    console.log(this.props);
 
     return (
       <View style={styles.todoIterm}>
@@ -49,8 +56,8 @@ class todo extends React.Component {
           ]}
         >
           <CheckBox
-            title={this.props.todoItem}
-            checked={this.state.checked}
+            title={this.props.todoItem.task}
+            checked={this.props.todoItem.done}
             onPress={() => this.onCheck()}
           />
         </Swipeable>
@@ -59,4 +66,4 @@ class todo extends React.Component {
   }
 }
 
-export default todo;
+export default connect()(todo);

@@ -10,7 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2df2168-cd89-4dd7-ae0d-bc16027c77d8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Components/addTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/addTodo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/displayTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/displayTodos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reducers/todoReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Reducers/todoReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,11 +142,11 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="7" sideWeight="0.49778435" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.49778435" visible="true" weight="0.32911393" />
       <window_info id="Captures" order="2" weight="0.24963072" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />

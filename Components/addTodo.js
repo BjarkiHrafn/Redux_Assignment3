@@ -19,7 +19,7 @@ class addTodo extends React.Component {
           title = "Add todo"
           onPress = {() => this.props.dispatch({
             type: "ADD_TODO",
-            payload: { newTodo: this.state.todo}
+            payload: this.state.todo
           })}
         />
       </View>

@@ -11,11 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c2df2168-cd89-4dd7-ae0d-bc16027c77d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actions/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Actions/todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/addTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/addTodo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/displayTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/displayTodos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reducers/todoReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Reducers/todoReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="260" />
     <option name="y" value="51" />
     <option name="width" value="1400" />
@@ -38,6 +37,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -49,9 +49,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -131,7 +130,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="51" width="1400" height="1002" extended-state="0" />
+    <frame x="260" y="51" width="1400" height="1002" extended-state="1" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -139,11 +138,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5014771" side_tool="true" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5022157" side_tool="true" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="7" sideWeight="0.4985229" visible="true" weight="0.32911393" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" sideWeight="0.49778435" visible="true" weight="0.32911393" />
       <window_info id="Captures" order="2" weight="0.24963072" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />

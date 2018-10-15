@@ -10,7 +10,7 @@ class addTodo extends React.Component {
     return(
       <View>
         <Text>
-          Hello, {this.props.todo}
+          Hello, {this.props.todos.length > 0 ? this.props.todos[0] : "empty" }
         </Text>
       </View>
     );
@@ -19,7 +19,7 @@ class addTodo extends React.Component {
 }
 
 const mapStateToProps = state => {
-  return {todo: state.todo};
+  return {todos: state.todos};
 };
 
 export default connect(mapStateToProps)(addTodo);

@@ -11,10 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c2df2168-cd89-4dd7-ae0d-bc16027c77d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/displayTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/displayTodos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/addTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/addTodo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reducers/todoReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Reducers/todoReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="260" />
     <option name="y" value="51" />
     <option name="width" value="1400" />
@@ -130,7 +130,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="51" width="1400" height="1002" extended-state="1" />
+    <frame x="260" y="51" width="1400" height="1002" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />

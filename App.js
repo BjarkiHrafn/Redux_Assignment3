@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import { Provider } from "react-redux";
 import store from "./store";
 import AddTodos from "./Components/addTodo";
@@ -8,22 +8,33 @@ import DisplayTodos from "./Components/displayTodos";
 export default class App extends React.Component {
   render() {
     return (
-      <Provider store={store}>
-        <View style={styles.container}>
-          <Text>Open up App.js to start working on your app!</Text>
-          <AddTodos />
-          <DisplayTodos />
-        </View>
-      </Provider>
+
+        <Provider store={store}>
+          <View>
+            <Image resizeMode={'cover'} style = {styles.img} source = {require('./assets/postIt.jpg')}></Image>
+            <View style={styles.container} >
+
+                <AddTodos />
+                <DisplayTodos />
+
+              </View>
+          </View>
+        </Provider>
+
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
+    top: 200,
+    backgroundColor: "white",
+    height: 300,
     alignItems: "center",
     justifyContent: "center"
+  },
+  img: {
+    position: "absolute",
+
   }
 });

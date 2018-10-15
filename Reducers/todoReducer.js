@@ -7,12 +7,12 @@ const initialState = {
 const todoReducer = (state = initialState, action) => {
   switch(action.type) {
     case ADD_TODO:
+    console.log("added: ", action.payload);
       return {
         ...state,
         todos: state.todos.concat(action.payload)
       };
       case DELETE_TODO:
-        console.log("inside delete_todo, payload: ", action.payload);
         return {
           ...state,
           todos: state.todos.filter(item => {

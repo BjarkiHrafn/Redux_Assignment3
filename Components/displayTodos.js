@@ -1,13 +1,15 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { connect } from 'react-redux';
-
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
+import { connect } from "react-redux";
 
 class addTodo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { todo: "" };
+  }
 
   render() {
-    console.log("displayTodos", this.props);
-    return(
+    return (
       <View>
         <Text>
           Hello, {this.props.todos.length > 0 ? this.props.todos[0] : "empty" }
@@ -15,7 +17,6 @@ class addTodo extends React.Component {
       </View>
     );
   }
-
 }
 
 const mapStateToProps = state => {

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { CheckBox } from "react-native-elements";
 import Swipeable from "react-native-swipeable";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
 const styles = StyleSheet.create({
   todoItem: {
@@ -20,7 +20,6 @@ class todo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: false,
       todoItem: this.props.todoItem
     };
   }
@@ -28,7 +27,10 @@ class todo extends React.Component {
   onDelete = () => {
     this.props.dispatch({
       type: "DELETE_TODO",
-      payload: {task: this.state.todoItem.task, done: this.state.todoItem.done}
+      payload: {
+        task: this.state.todoItem.task,
+        done: this.state.todoItem.done
+      }
     });
   };
 
@@ -37,14 +39,19 @@ class todo extends React.Component {
     //this.setState({ checked: !this.state.checked });
     this.props.dispatch({
       type: "UPDATE_DONE_TODO",
-      payload: {task: this.state.todoItem.task, done: this.state.todoItem.done}
-    })
+      payload: {
+        task: this.state.todoItem.task,
+        done: this.state.todoItem.done
+      }
+    });
+
+    this.setState({ done: this.props.todoItem.done });
   };
 
   render() {
-
+    console.log("renedring");
     return (
-      <View style={styles.todoIterm}>
+      <View style={styles.todoItem}>
         <Swipeable
           rightButtons={[
             <TouchableOpacity
@@ -56,8 +63,8 @@ class todo extends React.Component {
           ]}
         >
           <CheckBox
-            title={this.props.todoItem.task}
-            checked={this.props.todoItem.done}
+            title={this.state.todoItem.task}
+            checked={this.state.todoItem.done}
             onPress={() => this.onCheck()}
           />
         </Swipeable>

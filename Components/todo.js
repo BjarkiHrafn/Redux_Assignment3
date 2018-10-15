@@ -4,7 +4,7 @@ import { CheckBox } from "react-native-elements";
 import Swipeable from "react-native-swipeable";
 
 const styles = StyleSheet.create({
-  todoIterm: {
+  todoItem: {
     height: 100,
     alignSelf: "stretch"
   },
@@ -19,7 +19,8 @@ class todo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: false
+      checked: false,
+      todoItem: ""
     };
   }
 
@@ -33,6 +34,8 @@ class todo extends React.Component {
   };
 
   render() {
+    console.log(this.props);
+
     return (
       <View style={styles.todoIterm}>
         <Swipeable
@@ -46,7 +49,7 @@ class todo extends React.Component {
           ]}
         >
           <CheckBox
-            title="Click Here"
+            title={this.props.todoItem}
             checked={this.state.checked}
             onPress={() => this.onCheck()}
           />

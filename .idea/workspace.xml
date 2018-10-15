@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2df2168-cd89-4dd7-ae0d-bc16027c77d8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actions/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Actions/todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Components/addTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/addTodo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/displayTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/displayTodos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

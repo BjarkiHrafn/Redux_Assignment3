@@ -22,7 +22,7 @@ class addTodo extends React.Component {
     return (
       <View style={[styles.todoListContainer]}>
         {todos.map(t => (
-          <Todo todoItem={t} />
+          <Todo todoItem={t.task} />
         ))}
       </View>
     );

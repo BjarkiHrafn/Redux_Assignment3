@@ -7,7 +7,6 @@ const initialState = {
 const todoReducer = (state = initialState, action) => {
   switch(action.type) {
     case ADD_TODO:
-      console.log("payload: ", action.payload);
       return {
         ...state,
         todos: state.todos.concat(action.payload)

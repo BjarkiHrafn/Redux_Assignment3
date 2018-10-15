@@ -27,14 +27,16 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    top: 200,
+
     backgroundColor: "white",
-    height: 300,
+    top: 25,
+    bottom: 25,
     alignItems: "center",
     justifyContent: "center"
   },
   img: {
-    position: "absolute",
+    position: "relative",
+    height: 200
 
   }
 });

@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 
 const styles = StyleSheet.create({
   todoItem: {
-    height: 100,
     alignSelf: "stretch"
   },
   rightSwipeItem: {
@@ -29,7 +28,8 @@ class todo extends React.Component {
       type: "DELETE_TODO",
       payload: {
         task: this.state.todoItem.task,
-        done: this.state.todoItem.done
+        done: this.state.todoItem.done,
+        date: this.state.todoItem.date
       }
     });
   };
@@ -41,7 +41,8 @@ class todo extends React.Component {
       type: "UPDATE_DONE_TODO",
       payload: {
         task: this.state.todoItem.task,
-        done: this.state.todoItem.done
+        done: this.state.todoItem.done,
+        date: this.state.todoItem.date,
       }
     });
 
@@ -63,7 +64,7 @@ class todo extends React.Component {
           ]}
         >
           <CheckBox
-            title={this.state.todoItem.task}
+            title={this.state.todoItem.task + " - " + this.state.todoItem.date}
             checked={this.state.todoItem.done}
             onPress={() => this.onCheck()}
           />

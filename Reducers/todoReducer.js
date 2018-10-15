@@ -16,23 +16,6 @@ const todoReducer = (state = initialState, action) => {
         ...state,
         todos: state.todos.concat(action.payload)
       };
-<<<<<<< HEAD
-      case DELETE_TODO:
-        return {
-          ...state,
-          todos: state.todos.filter(item => {
-            console.log(item.task, " !=== ", action.payload, ": ", item.task !== action.payload)
-            item.task !== action.payload.task})
-        }
-        case UPDATE_DONE_TODO:
-          return {
-            ...state,
-            todos: state.todos.map(todo => {
-              if(todo.task === action.payload.task) {
-                todo.done = !todo.done;
-              }
-            })
-=======
     case DELETE_TODO:
       return {
         ...state,
@@ -44,7 +27,6 @@ const todoReducer = (state = initialState, action) => {
         todos: state.todos.map(todo => {
           if (todo.task === action.payload.task) {
             todo.done = !todo.done;
->>>>>>> f46f9adefe1de447c0f7773174159c3f7354360a
           }
           return todo;
         })

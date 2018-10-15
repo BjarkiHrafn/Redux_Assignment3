@@ -11,11 +11,12 @@ const initialState = {
 const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
-    console.log("added: ", action.payload);
+      console.log("added: ", action.payload);
       return {
         ...state,
         todos: state.todos.concat(action.payload)
       };
+
     case DELETE_TODO:
       return {
         ...state,

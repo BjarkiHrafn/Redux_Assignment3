@@ -35,8 +35,6 @@ class todo extends React.Component {
   };
 
   onCheck = () => {
-    // TODO: add checked to store
-    //this.setState({ checked: !this.state.checked });
     this.props.dispatch({
       type: "UPDATE_DONE_TODO",
       payload: {
@@ -46,7 +44,7 @@ class todo extends React.Component {
       }
     });
 
-    this.setState({ done: this.props.todoItem.done });
+    this.setState({ todoItem: this.props.todoItem });
   };
 
   render() {

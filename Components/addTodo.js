@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, View, Button, Text, TextInput } from 'react-native';
 import { connect } from 'react-redux';
+import DatePicker from 'react-native-datepicker';
+//import moment from 'moment';
 
 class addTodo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {todo: "", write: false, err: false};
+    this.state = {todo: "", write: false, err: false, date: "2019-10-15"};
   }
 
   onPressStart = () => {
@@ -17,7 +19,7 @@ class addTodo extends React.Component {
 
     this.props.dispatch({
       type: "ADD_TODO",
-      payload: {task: this.state.todo, done: false}
+      payload: {task: this.state.todo, done: false, date: this.state.date}
     });
   }
 
@@ -30,12 +32,39 @@ class addTodo extends React.Component {
     if(this.state.write) {
       return(
         <View>
-          {this.state.err ? <Text>hey i am an error, look at me!</Text> : null}
-          <TextInput
-            onChangeText = {todo => this.setState({todo})}
-            value = {this.state.todo}
-          />
-          <Button
+          <View style={styles.inputContainer}>
+            {this.state.err ? <Text style = {styles.errMsg}>Please insert text before adding a todo!</Text> : null}
+            <TextInput style = {styles.input}
+              onChangeText = {todo => this.setState({todo})}
+              value = {this.state.todo}
+            />
+
+          <DatePicker
+             style={{width: 200}}
+             date={this.state.date}
+             mode="date"
+             placeholder="select date"
+             format="YYYY-MM-DD"
+             minDate="2019-10-15"
+             maxDate="2019-12-31"
+             confirmBtnText="Confirm"
+             cancelBtnText="Cancel"
+             customStyles={{
+               dateIcon: {
+                 position: 'absolute',
+                 left: 0,
+                 top: 4,
+                 marginLeft: 0
+               },
+               dateInput: {
+                 marginLeft: 36
+               }
+               // ... You can check the source to find the other keys.
+             }}
+             onDateChange={(date) => {this.setState({date: date})}}
+           />
+           </View>
+          <Button style = {styles.buttn}
             title = "Add todo"
             onPress = {this.state.todo !== "" ? this.onPressAdd : this.onError}
           />
@@ -59,6 +88,31 @@ const styles = StyleSheet.create({
     height: 60,
     alignItems: "center",
     justifyContent: "center"
+  },
+  errMsg: {
+    color: "red",
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  buttn: {
+    width: "100%",
+    height: 60,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  input: {
+    height: 70,
+    backgroundColor: '#ffffff',
+    paddingLeft: 15,
+    paddingRight: 15,
+  },
+  inputContainer: {
+    borderLeftWidth: 1,
+    borderTopWidth: 1,
+    borderRightWidth: 1,
+    borderBottomWidth: 1,
+    height: "auto"
   }
 });
 export default connect()(addTodo);

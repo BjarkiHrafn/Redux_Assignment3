@@ -17,11 +17,11 @@ class addTodo extends React.Component {
 
   render() {
     const { todos } = this.props;
-    console.log("todos: ", todos);
+    console.log(todos);
     return (
       <View style={[styles.todoListContainer]}>
-        {todos.map( (t, i) => (
-          <Todo key = {i} todoItem={t} />
+        {todos.map((t, i) => (
+          <Todo key={i} todoItem={t} />
         ))}
       </View>
     );

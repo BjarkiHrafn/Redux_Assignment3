@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, ScrollView } from "react-native";
 import { connect } from "react-redux";
 import Todo from "./todo";
 
@@ -19,11 +19,11 @@ class addTodo extends React.Component {
     const { todos } = this.props;
     console.log(todos);
     return (
-      <View style={[styles.todoListContainer]}>
+      <ScrollView style={[styles.todoListContainer]}>
         {todos.map((t, i) => (
           <Todo key={i} todoItem={t} />
         ))}
-      </View>
+      </ScrollView>
     );
   }
 }
